@@ -1,1 +1,2 @@
-<button class="metal linear">{{floorNum}}</button>
+<button #floor class="metal linear"  [ngClass]="{activeFloor: active}" (click)="Elevator()">{{floorNum}}</button>
+<!-- <audio #audioPlayerRef><source src="" type="audio/mpeg"/></audio> -->

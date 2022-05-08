@@ -1,1 +1,6 @@
-<app-floor *ngFor="let item of floors" [floorNum]="item"></app-floor>
+<div class="d-flex">
+  <div class="d-flex flex-column">
+    <app-floor *ngFor="let item of floors" [floorNum]="item" (playAudio)="play($event)" class="floor"></app-floor>
+    <img id="elv" #elv src="../assets/elv.png">
+  </div>
+</div>
